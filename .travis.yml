@@ -1,0 +1,13 @@
+language: node_js
+node_js:
+  - '8'
+deploy:
+  provider: heroku
+  api_key:
+    secure: a8a63d84-1942-4753-85df-12938a567c3c
+  app:
+    develop: simulationesatt
+install:
+  - "npm install --no-optional"
+before_script:
+  - "npm info dredd version"
