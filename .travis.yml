@@ -4,9 +4,9 @@ node_js:
 deploy:
   provider: heroku
   api_key:
-    secure: a8a63d84-1942-4753-85df-12938a567c3c
+    secure: $HEROKU_KEY
   app:
-    develop: simulationesatt
+    develop: app simulationesatt
 install:
   - "npm install --no-optional"
 before_script:
